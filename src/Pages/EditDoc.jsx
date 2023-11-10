@@ -31,7 +31,7 @@ function EditDoc({database}) {
                 quillData: quillData
             })
             .then(() => {
-                toast.info('Document Saved')
+                toast.success('Document Saved')
                
 
             })
