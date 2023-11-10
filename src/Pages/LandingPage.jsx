@@ -57,6 +57,7 @@ function LandingPage({database}) {
   const deleteDocument =(id)=>{
     const document = doc(collectionRef,id)
     deleteDoc(document)
+    toast.success('Document Deleted')
    
   }
   return (
