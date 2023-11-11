@@ -31,13 +31,13 @@ function EditDoc({database}) {
                 quillData: quillData
             })
             .then(() => {
-                toast.success('Document Saved')
+                toast.success('Document Updated')
                
 
             })
            
             .catch(() => {
-                toast.error('Cannot Save Document')
+                toast.error('Cannot Update Document')
             })
             navigate('/')
         }

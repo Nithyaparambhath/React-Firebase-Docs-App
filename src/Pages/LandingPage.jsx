@@ -27,12 +27,12 @@ function LandingPage({database}) {
             quillData:''
         })
         .then(()=>{
-            toast.success('Data Added')
+            toast.success('Document Added')
             handleClose()
             setTitle('')
         })
         .catch(()=>{
-            toast.error('Cannot add Data')
+            toast.error('Cannot add Document')
              handleClose()
         })
        
