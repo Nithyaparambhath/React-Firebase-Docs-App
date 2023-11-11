@@ -64,19 +64,20 @@ function LandingPage({database}) {
     <div style={{minHeight:'100vh'}} className='docs-main-section  d-flex flex-column align-items-center justify-content-center w-100'>
         <h1>Docs App</h1>
         <button onClick={handleShow} className='btn btn-info mt-3'>Add Document +</button>
+        
         <div style={{width:'80%'}} className='m-5'>
         <Row >
                 {documents?.map((doc,i) => {
                     return (
                            
-                      <Col sm={12} md={6} lg={4} xl={4} >
+                      <Col sm={12} md={6} lg={3} xl={4} >
                               
-                                    <Card key={i} style={{height:'150px'}}  className='me-3 mb-3 '>
+                                    <Card key={i} style={{maxheight:'200px'}}  className='me-3 mb-3 '>
                                         <Card.Body className='d-flex justify-content-between'>
                                            <div>
-                                              <Card.Title>{doc.title}</Card.Title>
-                                              <Card.Text>
-                                              <div dangerouslySetInnerHTML={{ __html: doc.quillData }} />
+                                              <Card.Title style={{lineHeight:'20px',textAlign:'left'}}>{doc.title}</Card.Title>
+                                              <Card.Text style={{lineHeight:'20px',textAlign:'left'}} className='mt-3' >
+                                                            <div dangerouslySetInnerHTML={{ __html: doc.quillData }} />
                                               </Card.Text>
                                            </div>
                                             {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
