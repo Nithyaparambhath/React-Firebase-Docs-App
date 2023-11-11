@@ -70,12 +70,12 @@ function LandingPage({database}) {
                 {documents?.map((doc,i) => {
                     return (
                            
-                      <Col sm={12} md={6} lg={3} xl={4} >
+                      <Col sm={12} md={6} lg={2} xl={4} >
                               
-                                    <Card key={i} style={{maxheight:'200px'}}  className='me-3 mb-3 '>
-                                        <Card.Body className='d-flex justify-content-between'>
+                                    <Card key={i} style={{maxheight:'200px',width:'100%',boxSizing:'border-box'}}  className='me-3 mb-3 '>
+                                        <Card.Body  className='d-flex justify-content-between'>
                                            <div>
-                                              <Card.Title style={{lineHeight:'20px',textAlign:'left'}}>{doc.title}</Card.Title>
+                                              <Card.Title style={{lineHeight:'20px',textAlign:'left',fontWeight:'800',fontSize:'25px'}}>{doc.title}</Card.Title>
                                               <Card.Text style={{lineHeight:'20px',textAlign:'left'}} className='mt-3' >
                                                             <div dangerouslySetInnerHTML={{ __html: doc.quillData }} />
                                               </Card.Text>
