@@ -75,7 +75,7 @@ function LandingPage({database}) {
                                     <Card key={i} style={{maxheight:'200px',width:'100%',boxSizing:'border-box'}}  className='me-3 mb-3 '>
                                         <Card.Body  className='d-flex justify-content-between'>
                                            <div>
-                                              <Card.Title style={{lineHeight:'20px',textAlign:'left',fontWeight:'800',fontSize:'25px'}}>{doc.title}</Card.Title>
+                                              <Card.Title style={{lineHeight:'20px',textAlign:'left',fontWeight:'800',fontSize:'20px'}}>{doc.title}</Card.Title>
                                               <Card.Text style={{lineHeight:'20px',textAlign:'left'}} className='mt-3' >
                                                             <div dangerouslySetInnerHTML={{ __html: doc.quillData }} />
                                               </Card.Text>
